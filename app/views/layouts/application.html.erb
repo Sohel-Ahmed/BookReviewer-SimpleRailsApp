@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IReviewed</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<p id="notice"><%= notice %></p>
+
+<div style="float: right;">
+<% if logged_in? %>
+Logged in as <%= current_user.name %> | <%= link_to "Logout",  logout_path, method: :delete%>
+<% end %>
+</div>
+
+<%= yield %>
+</body>
+</html>
