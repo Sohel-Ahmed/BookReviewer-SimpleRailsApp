@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ body { font: bold 15px sans-serif;
+ 	background: lightgrey;
+	margin:80px 80px 100px 100px;
+}
 .note-title {font: bold 15px arial, sans-serif;}
 .book-title {font: bold 15px arial, sans-serif;}
 .book { padding-bottom: 10px; }
@@ -33,4 +37,23 @@
 	}
 .actions { 
 	margin: 10px 10px; 
+}
+
+div#fixedheader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:20px;
+}
+div#fixedfooter {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
 }
